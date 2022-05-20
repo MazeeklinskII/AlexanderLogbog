@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CUm™</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css"></link>
+    </head>
+
+    <!--Button with rounded corners-->
+    <style>
+        .accordion {
+           background-color: lightgray;
+           color: white;
+           text-align: left;
+           padding: 20px;
+           border-radius: 15px;
+        }
+   </style>
+
+        <style>
+        .flip-card {
+        background-color: transparent;
+        width: 800px;
+        height: 535px;
+        border: 0px solid #f1f1f1;
+        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+        }
+
+        .flip-card-inner {
+            height: 535px;
+            transition: transform 4s;
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(540deg);
+        }
+    </style>
+
+    <!-- Banner HTML -->
+    <div class="banner">
+        <h1>... But the people are retarded.</h1>
+        <font-color></font-color>
+    </div>
+
+    <body>
+        <!-- Navigation bar HTML -->
+        <div class="topnav" id="myTopnav">
+            <a href="index.html">Carsten</a>
+            <a href="informatik.html" class="active">Informatiske Noter</a>
+            <a href="Projekter.html">Fucking Projekter</a>
+            <div class="dropdown">
+                <button class="dropbtn">Programmering</button>
+                <div class="dropdown-content">
+                    <a href="Python.html">Python</a>
+                    <a href="JS.html">Javascript</a>
+                    <a href="CSS.html">CSS</a>
+                </div>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <!-- Accordion HTML -->
+        <div class="content" id="informatik">
+            <div class="element left">
+            <!--INFORMATISK GRUNDFORLØB-->
+                <h2>Informatisk Grundforløb</h2>
+                <button class="accordion">Mass Surveillance and Surveillance Capitalism</button>
+                <div class="panel">
+                <p>Vi snakkede om hvordan man overvåger befolkningnen i alle til næsten alle lande, og hvordan det påvirker folk
+                <br><br>lektierne til dette forløb var:
+                <br>Mass surveillance - <a href="https://www.youtube.com/watch?v=ucRWyGKBVzo"> Mass surveillance </a>
+                <br>surveillance capitalism - <a href="https://medium.com/swlh/what-is-surveillance-capitalism-bd7c24d8ddba">medium.com - What is survaillance capitalism</a> og <a href="https://www.youtube.com/watch?v=hIXhnWUmMvw">Shoshana Zuboff on surveillance</a> </p>
+                </div>
+
+                <button class="accordion">Cybersikkerhed og verificering</button>
+                <div class="panel">
+                <h4>De tre typer for verificering:</h4>
+                    <ol>
+                        <li>Data (Noget man ved) - dette kan være et password, ulempen med denne metode er, at det kan blive lært til andre, som så kan verificere sig selv som dig.</li>
+                        <li>Objektiferet (noget man har) - dette kan være en nøgle eller et sikkerhedskort. ulempe - kan blive stjålet</li>
+                        <li>Biometrisk (noget man er) - eksempel: fingeraftryk, iris, hjernescan - ulempen, hvis  du mister din biometriske nøgle, er du fucked</li>
+                    </ol> 
+                <h4>Multi-faktor-verificering:</h4>
+                <p>Verificering med mere end én metode for verificering - Eksempel: engangskoder</p>
+                <h4>Trusselsmodellen</h4>
+                <p>De fire faktorer der underbygger en forståelse for en Thread Model er:</p>
+                    <dl>
+                        <dt>Anti-fænomen</dt>
+                            <dd>- Hvem er modstanderen</dd>
+                        <dt>Beksyttelsesværdi genstand</dt>
+                            <dd>- Hvad er modstanderen efter?</dd>
+                        <dt>Planen</dt>
+                            <dd>- Hvordan beskytter jeg modstanderens ønskede bytte?</dd>
+                        <dt>Modstanders midler</dt>
+                            <dd>- Hvad bruger modstanderen i mod mig?</dd>
+                    </dl>
+                    <!-- Credits til Mads Dick(ov) Christiansen -->
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img src="images/batman-threat-model-1200-800x535.png" alt="Avatar" style="width:800px;height:535px;">
+                          </div>
+                          <div class="flip-card-back" class="flip-card-back-content">
+                            <br><br><br><br><br><br><br><br><br>
+                            <h1>Guess what!</h1>
+                            <br><br>Du smuk😘
+                          </div>
+                        </div>
+                      </div>
+                <h4>LRE privilegierne:</h4>
+                    <ol>
+                        <li>Læs - hvad må læses?</li>
+                        <li>Rediger - hvad må foreslås?</li>
+                        <li>Eksekver - hvad må ændres?</li>
+                    </ol>    
+                </div>
+
+                <button class="accordion">Kryptografi</button>
+                <div class="panel">
+                <p>Kryptering er, at nedbryde data til ulæselighed, men ikke udover dekryptering, så du kan læse det igen. Kryptering kan i bund og grund gøres på to måder, der er:</p>
+                <ol>
+                    <li>Symmetric Key Encryption / Private Key Encryption</li>
+                    <li>Asymmetric Key Encryption / Public Key Encryption</li>
+                </ol>
+                <p>En Privat key sørger for at kun den eller dem der skal se dataen (beskeder, dokumenter osv) kan se den, med samme nøgle. Til denne key føres der to metoder for brug:</p>
+                <ul>
+                    <li>Stream Ciphers - Stream Ciphers kryptere data bit fra bit, det er den mindst brugte metode til Kryptering</li>
+                    <li>Block Ciphers - Block Ciphers kryptere data hele blokke af bits, disse blokke kan have en størrelse på enten 64, 128 eller 256 bits</li>
+                </ul>
+                <p>En public key er en key der er til offentlig tilskue den kan ses af alle der vil se den.
+                <br>Til Asymmetric Encryption skal man bruge både en Public key og Private key en for Krypteringen og en for Dekryptering, Private key'en tilhøre den der har skabt dem begge. For at vide, at det rent faktisk er den person som man gerne ville have bruger sin public key, skal man bruge en teknik der hedder Digital Signature, som fungere sådan her:</p>
+                <img src="images/DigiSig.png" style="width: 1000px; height: 550px;">
+                </div>
+
+                <button class="accordion">Cyberattacks</button>
+                <div class="panel">
+                <p>Cyberattacks kommer i en masse former og farver. Et cyberattack defineres som en et indgreb i et peronligt område vha cyberspace. Forskellige metoder til dette er:</p>
+                <ul>
+                    <li>Pretexting - Forfalskning af autoritet, det mest kendte & stereotypiske eksempel på pretexting er den der inder der ringer fra Microsoft og siger, at der er en virus på din computer.</li>
+                    <li>Trojan Horse - En Trojan Horse er en form for notifikation der ser venlig ud, men så snart du åbner den, får du et stykke malware </li>
+                </ul>
+                </div> 
+
+                
+            <!--DESIGN AF IT-SUSTEMER-->
+                <h2>Design af IT-systemer</h2>
+                <button class="accordion">The 5 principles of Graphic Design</button>
+                <div class="panel">
+                <p>Der er 5 principper, man skal passe på, nå man laver Graphic Design:
+                    <dl>
+                        <dt>Alignment</dt>
+                        <dd>Jo mere en hjemmesides sager er på lige fod, både vand- og lodret, jo nemmere er det for brugeren, at finde frem og tilbage på siden.</dd>
+                        <dt>Repetition</dt>
+                        <dd>Stilarten skal gerne være gengående på din hjemmeside, som f.eks. farver og former.</dd>
+                        <dt>Contrast</dt>
+                        <dd></dd>
+                        <dt>Hierarchy</dt>
+                        <dd></dd>
+                        <dt>Balance - Symmetry</dt>
+                        <dd></dd>
+                        <dt>Balance - Tension</dt>
+                        <dd></dd>   
+                      </dl>
+                    <p>Shillington Education: <a href=https://www.shillingtoneducation.com/blog/graphic-design-basic-principles>5 basics principles of Graphic Design</a></p>    
+                </p>    
+                </div>
+
+                <button class="accordion">Iterative design</button>
+                <div class="panel">
+                <p>Dette er en metode for at lave hjemmesider, til den bruges der 3 faser: Assess, Design og Build</p>
+                <!--Assess fasen-->
+                <p><Strong>ASSESS</Strong><br>Evaluer, hvad er problemet? Til assessing er der 5 metoder:<br> 
+                    <ul>
+                        <li>Interviews (snak med brugerne af produktet).</li>
+                        <li>Observations (Kig på brugernes adfærd).</li>
+                        <li>Surveys (Spørg brugerne).</li>
+                        <li>User testing (få brugerne til at afprøve produktet).</li>
+                        <li>Inspection Methods (Kig selv på produktet, som om du selv var en bruger).</li>
+                      </ul>  
+                Der er to andre metoder til assessment, den ene er kvalitativ vs. kvantitativ, den anden er naturalistisk vs. kunstig.<br><br> Kvalitativ undersøgelsesmetode: er at tage tal på observationer af brugers adfærd.<br><br> Kvantitativ undersøgelsesmetode: er at beskrive en observation, med brug af udseende af situationen.<br><br> Naturalistisk undersøgelsesmetode: er at undersøge (på en af de fem måder) brugerens holdning til dit produkt, mens du ikke har produktet mellem dig selv og brugeren (kan blive omtalt som realistisk undersøgelse).<br><br> Kunstig undersøgelsesmetode: er når man undersøger brugerens holdning til dit produkt, mens du ikke har produktet mellem dig og brugeren (kan blive omtalt som urealistisk)</p>
+                <!--Design fasen-->
+                <p><strong>DESIGN</strong><br>Kom frem til, Hvordan løser vi dette problem</p>
+                <P> Personas, scenarios, User stories 
+                <br>Sketching and Ideation
+                <br>Storyboarding
+                <br>Brainstorming</P>
+                <!--Build fasen-->
+                <p><strong>BUILD</strong><br>Løs problemet</p>
+                </div>
+
+                <button class="accordion">Spiralmodellen</button>
+                <div class="panel">
+                <p>Spiralmodellen beskriver hvordan en produktion process fungere. Du starter i Assess fasen hvor alt er nyt, her skal du finde ud af hvad der er et problem. Efter Assess fasen skal du optegne ideer for hvordan man løser det bestemte problem. Til slut skal du bygge løsningen til det problem du fandt i assess fasen vha. det design du lavede i design fasen. når du er færdig med build fasen, starter du forfra, denne gang har du dog dit build fra sidste omgang.
+                <br>Dette bliver du ved med indtil du er færdig, og har lavet et fantastisk produkt.</p>
+                <img src="images/Iterativedesign.png">
+                </div>
+
+            <!--PROGRAMMERING-->
+                <h2>Programmering</h2>
+                <button class="accordion">Github</button>
+                <div class="panel">
+                <p>Github er en hjemmeside, hvorpå programøre kan oploade deres produkter og dele den med andre.</p>    
+                </div>
+
+                <button class="accordion">Rutediagrammer/Flowcharts</button>
+                <div class="panel">
+                <p>Flowcharts er modeller der viser hvordan en process fungere. En god hjemmeside til at lave flowcharts er draw.io</p>
+                <p>Til dette forløb er der en opgave/øvelse, hvor vi skal lave et flowchart for en kode, der blev udgivet af vores lærer:</p>
+                <img src="images/FlowchartOpgave.png">
+                <p> måde som jeg løste opgaven på er:</p>
+                </div>
+
+                <button class="accordion">CRUD</button>
+                <div class="panel">
+                <img src="images/CRUD-header.png">
+                <p>CRUD står for Create, Read, update, and delete. Disse er de fire basiske operationer/aktioner inden for computer programmering, og bliver brugt til, at beskrive user interface. CRUD fungere lidt ligesom spiralmodellen, du bliver ved og ved indtil lortet virker. Der er andre akronymer som minder om CRUD:</p>
+                <ul>
+                    <li>CRUDL - Create, read, update, delete, list</li>
+                    <li>BREAD - Browse, read, edit, add, delete</li>
+                    <li>DAVE - Delete, add, view, edit</li>
+                    <li>CRAP - Create, replicate, append, process</li>
+                </ul> 
+                </div>
+
+                <button class="accordion">DOM</button>
+                <div class="panel">
+                <p>DOM (Document Object Model) er et hierarkisk system der sørger for, at visse strukture/kommandoer kommer før andre i form af kode</p>
+                <img src="images/DOM.png">
+                </div>
+
+                <button class="accordion">IDE</button>
+                <div class="panel">
+                <p>Integrated Development Enviroment er en platform hvorpå et program kan skrives, læses og/eller køres, sådan en IDE kaldes også for text editor. Der er mange forskellige slags IDE'er, én af dem er den jeg bruger til, at skrive i lige nu, nemlig Visual Studio Code (VSC)</p>    
+                </div>
+
+            <!--SEVERE OG DATABASER-->
+                <h2>Severe og Databaser</h2>
+                <button class="accordion">Client-server model</button>
+                <div class="panel">
+                <p>Client-server modellen viser hvordan interaktion/kommunikation mellem clienten (brugeren) og serveren fungere henover internettet</p>
+                <img src="images/ClientServerModel.png" style="width: 700px; height: 350;">    
+                </div>
+
+                <button class="accordion">3-lags Arkitektur</button>
+                <div class="panel">
+                <p>3-lags Arkitektur opdeles i 3 lag (selvfølgelig), de 3 lag er Client-tier, Logic-tier og Data-tier.</p>
+                <h4>Client-tier</h4>
+                <p>Client-tier er brugeren.</p>
+                <h4>Logic-tier</h4>
+                <p>Logic-tier er programmet som brugeren bruger</p>
+                <h4>Data-tier</h4>
+                <p>Data-tier er det der står bag programmet, og det som programmet betvinges efter.</p> 
+                </div>
+
+                <button class="accordion">Terminalen</button>
+                <div class="panel">
+                <p>Terminalen er det samme som kommandoprompt'en, vi bruger den henholdsvis til at importere pacs til din kode. Man bruger også Terminalen til, at starte servere op.</p>    
+                </div>
+
+                <button class="accordion">HTTP/HTTPS</button>
+                <div class="panel">
+                <p>HyperText Transfer Protocol er den mest udbredte metode, at transformere information fra server til client, den sørger for at du, som client, kan se fra dit tier. For at se om en hjemmeside er farlig eller ej (fyldt med vira og andet møg) anskaffer man sig et "certifikat", som er S'et i HTTPS, det står for secure, og det betyder at hjemmesiden er på en sikker server som ikke giver din computer malware</p>    
+                </div>
+
+                <button class="accordion">Entity Relationship Diagram</button>
+                <div class="panel">
+                <p>En ERD er en metode til, at visualisere entities fællesrealationer, og den bruges til styring af databaser. Fagbegreberne til dette emne er:
+                <ul>
+                    <li>Primary key - En bestemt data/attribut ved en entity, som er udestående fra de andre dataer, den skal følge tre regler:
+                        <ol>
+                            <li>Den må ikke ændres</li>
+                            <li>Den må dublikeres</li>
+                            <li>Den må aldrig være lig ingenting</li>
+                        </ol>
+                        Der skal være ÉN primary key til en entity, ikke flere, ikke færre. 
+                    </li>
+                    <br>
+                    <li>Foerign Key - En bestemt data/attribut ved en entity, som forekommer i en anden entity, de har også et sæt af regler:
+                        <ol>
+                            <li>Den må ikke kunne ændres</li>
+                            <li>Den må gerne dublikeres</li>
+                        </ol>
+                    </li>
+                    <br>
+                    <li>Composite primary key - To til flere dataer sammensat til én, denne key fælger og så et sæt regler:
+                        <ol>
+                            <li>Den skal sammensættes af den kortest mulige kombination</li>
+                            <li>Dens byggesten skal være primary keys</li>
+                        </ol>
+                    </li>
+                </ul>
+                <br>
+                Hvis en kunde køber et produkt hos Amazon, så skal Amazon vide forskellige ting omkring denne kunde og deres køb, de tre grund ting der skal kendes til er <strong>Hvem</strong>, <strong>Hvad</strong> og <strong>Hvor(når)</strong>. Disse tre ting kan brydes ned til <Strong>Customer</Strong>, <strong>Product</strong> og <strong>Order</strong>.</p>
+                <img src="images/ERD.png"> 
+                <p>Hvis man har en Customer "John Hilter (JH)", han logger ind på <a href="https://www.bmsfactory.com/">amazon.com</a> og JH køber en <a href="https://www.amazon.com/Mein-Kampf-Adolf-Hitler-ebook/dp/B0024FA18K/ref=sr_1_2?keywords=mean+kamf&qid=1653053982&sprefix=mein+kam%2Caps%2C162&sr=8-2">Paperback kopi af Mein Kampf</a>, denne Product er sin egen entity, når han bestiller den får han et ordrenummer, dette odrernummer bliver til den entity der skal være bridge entity (En bridge entity sørger for at der er korelation mellem en entity og en anden, den sørger også for, at man får så mange informationer som overhovedet muligt) mellem Customer og Product.</p>
+                </div>
+
+                
+<!-- 
+    <label for="course">[insert completion here]:</label>
+    <progess id="course" value="n" max="100"></progress> (insert procentage (number))%
+-->
+    
+            </div>
+
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
